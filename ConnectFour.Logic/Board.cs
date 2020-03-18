@@ -205,7 +205,7 @@ namespace ConnectFour.Logic
             var rowLength = GameBoard.GetLength(1);
 
 
-            for (byte row = 0; row < rowLength; row++)
+            for (int row = rowLength-1; row >=0; row--)
             {
                 for (byte column = 0; column < columnLength; column++)
                 {
